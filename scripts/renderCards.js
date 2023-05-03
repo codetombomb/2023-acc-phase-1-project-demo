@@ -5,5 +5,6 @@ const renderCards = (cardDataArray) => {
         const img = document.createElement("img")
         img.src = card.image
         cardWrapper.appendChild(img)
+        img.addEventListener("click", () => console.log(card))
     })
 }
