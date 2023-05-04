@@ -1,3 +1,5 @@
+const log = console.log
+
 const botwData = {
   creatures: [],
   equipment: [],
@@ -8,4 +10,8 @@ const botwData = {
 
 const idElement = (id) => {
   return document.getElementById(id)
+}
+
+const flatten = (data) => {
+  return Object.values(data).flat()
 }
