@@ -82,7 +82,7 @@ header {
 
 #sheikah-logo {
   max-width: 4%;
-  margin: 1.5% 0 1.5% 1.5%;
+  margin: 1.5% 0 1.5% 1.5%; /* (shorthand) margin: top right bottom left  */
   cursor: pointer;
   min-width: 50px;
 }
@@ -110,6 +110,7 @@ nav {
 .nav-link {
   font-size:calc(12px + .5vw); /* https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css#:~:text=In%20CSS3%20there%20is%20a%20simple%20but%20brilliant%20hack%20for%20that%3A*/
   list-style: none;
+  margin: 2%;
   color: var(--shiekah-blue);
   padding: 0.5%;
   cursor: pointer;
@@ -125,7 +126,7 @@ main {
 }
 
 #card-wrapper {
-  margin-top: 1%;
+  margin: 1% 0 1% 0; /* (shorthand) margin: top right bottom left  */
   background-color: #fefefd;
   width: 80%;
   display: grid;
