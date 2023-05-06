@@ -1,4 +1,4 @@
-:root {
+:root { /* CSS Variables: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#:~:text=Note%20that%20the%20selector%20given%20to%20the%20ruleset%20defines%20the%20scope%20that%20the%20custom%20property%20can%20be%20used%20in.%20A%20common%20best%20practice%20is%20to%20define%20custom%20properties%20on%20the%20%3Aroot%20pseudo%2Dclass%2C%20so%20that%20it%20can%20be%20applied%20globally%20across%20your%20HTML%20document%3A  */
   --shiekah-blue: #00c1d5;
   --dark-grey: #242424;
   --light-grey: #dadcda;
@@ -9,28 +9,28 @@
   --db-yellow: 1px solid yellow;
 }
 
-*::before,
+*::before, /* Remove default padding and margin that comes before and after elements: https://stackoverflow.com/questions/58981682/whats-the-purpose-of-these-css-rules#:~:text=This%20snippet%20has%20a%20few%20purposes%2C%20mostly%20just%20overriding/resetting%20some%20default%20styling.%20The%20*%20selector%20applies%20these%20values%20to%20every%20element%20on%20the%20page%2C%20and%20the%20%3A%3Abefore/%3A%3Aafter%20make%20sure%20it%20also%20applies%20to%20any%20pseudo%2Delements.  */
 *::after,
 * {
   padding: 0;
   margin: 0;
 }
 
-* {
+* { 
   box-sizing: border-box;
-  font-family: var(--primary-font);
+  font-family: var(--primary-font); /* Use a CSS variable: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#:~:text=As%20mentioned%20earlier%2C%20you%20use%20the%20custom%20property%20value%20by%20specifying%20your%20custom%20property%20name%20inside%20the%20var()%20function%2C%20in%20place%20of%20a%20regular%20property%20value%3A  */
 }
 
 body,
 html {
   background-color: grey;
-  height: 100%;
+  height: 100%; /* Set an initial value on the top-most element so that all other elements can size themselves based on this value  */
 }
 
 header {
   background-color: var(--dark-grey);
   height: 60%;
-  display: flex;
+  display: flex; /* Activate Flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
   flex-direction: column;
 }
 
@@ -51,9 +51,10 @@ header {
 }
 
 #sheikah-logo {
-  max-width: 5%;
+  max-width: 4%;
   margin: 1.5% 0 0 1.5%;
   cursor: pointer;
+  min-width: 50px;
 }
 
 #nav-wrapper {
@@ -91,7 +92,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* margin-top: 2%; */
 }
 
 #card-wrapper {
@@ -99,7 +99,7 @@ main {
   width: 80%;
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 0.5em;
   padding: 1%;
 }
