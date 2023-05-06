@@ -28,10 +28,10 @@ html {
 }
 
 header {
-  background-color: var(--dark-grey);
   height: 60%;
   display: flex; /* Activate Flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
   flex-direction: column;
+  background-color: var(--dark-grey);
 }
 
 #search-bar-wrapper {
@@ -52,6 +52,21 @@ header {
   border-radius: .5em;
   flex-grow: 1;
   text-align: center;
+  border: .5px solid black;
+}
+
+#search-submit {
+  cursor: pointer;
+  border: none;
+  height: 100%;
+  padding-right: 1%;
+  background-color: rgba(255, 0, 0, 0);
+  position: absolute;
+  right: 0;
+}
+
+#search-submit > img {
+  height: 100%;
 }
 
 #hero-banner {
@@ -88,7 +103,7 @@ nav {
 #nav-links {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
   justify-content: space-around;
   background-color: var(--dark-grey);
 }
