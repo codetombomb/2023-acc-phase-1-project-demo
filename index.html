@@ -17,11 +17,14 @@
 
     <link rel="stylesheet" href="styles.css" />
     <title>BOTW Companion</title>
-
   </head>
   <body>
     <header>
-      <img id="sheikah-logo" src="./assets/sheikah-logo.svg" alt="Shiekah Logo" />
+      <img
+        id="sheikah-logo"
+        src="./assets/sheikah-logo.svg"
+        alt="Shiekah Logo"
+      />
       <div id="search-bar-wrapper">
         <form id="search-bar-form">
           <input type="text" name="search-bar" />
@@ -30,15 +33,17 @@
       </div>
       <div id="hero-banner"></div>
     </header>
-    <nav>
-      <ul id="nav-links">
-        <li class="nav-link" for="creatures">Creatures</li>
-        <li class="nav-link" for="equipment">Equipment</li>
-        <li class="nav-link" for="materials">Materials</li>
-        <li class="nav-link" for="monsters">Monsters</li>
-        <li class="nav-link" for="treasure">Treasure</li>
-      </ul>
-    </nav>
+    <div id="nav-wrapper">
+      <nav>
+        <ul id="nav-links">
+          <li class="nav-link" for="creatures">Creatures</li>
+          <li class="nav-link" for="equipment">Equipment</li>
+          <li class="nav-link" for="materials">Materials</li>
+          <li class="nav-link" for="monsters">Monsters</li>
+          <li class="nav-link" for="treasure">Treasure</li>
+        </ul>
+      </nav>
+    </div>
     <main>
       <div id="card-wrapper"></div>
     </main>
