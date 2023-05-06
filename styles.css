@@ -125,6 +125,7 @@ main {
 }
 
 #card-wrapper {
+  margin-top: 1%;
   background-color: #fefefd;
   width: 80%;
   display: grid;
