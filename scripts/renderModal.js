@@ -39,13 +39,6 @@ const populateModalData = (data, modal) => {
 
 const renderModal = (cardData) => {
   log(cardData);
-  const modal = document.querySelector(".modal");
   populateModalData(cardData, modal);
-  const bootstrapModal = new bootstrap.Modal(modal, {
-    // Passing options: https://getbootstrap.com/docs/5.0/components/modal/#passing-options
-    keyboard: true,
-    backdrop: true,
-    focus: true,
-  });
   bootstrapModal.show(); // Bootstrap show() method: https://getbootstrap.com/docs/5.0/components/modal/#show
 };
