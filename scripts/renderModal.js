@@ -50,6 +50,7 @@ const populateModalData = (data, modal) => {
   }
 };
 
+
 const renderModal = (cardData) => {
   populateModalData(cardData, modal);
   bootstrapModal.show(); // Bootstrap show() method: https://getbootstrap.com/docs/5.0/components/modal/#show
