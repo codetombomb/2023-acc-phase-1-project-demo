@@ -43,8 +43,12 @@ header {
   border: none;
 }
 
-.modal-locations {
+.modal-list {
   margin: 1em;
+}
+
+.modal-drops-heading {
+  display: none;
 }
 
 #search-bar-wrapper {
