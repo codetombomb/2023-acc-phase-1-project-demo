@@ -34,6 +34,19 @@ header {
   background-color: var(--dark-grey);
 }
 
+.modal-title {
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: var(--shiekah-blue);
+  border: none;
+}
+
+.modal-locations {
+  margin: 1em;
+}
+
 #search-bar-wrapper {
   display: grid;
   place-items: center;
