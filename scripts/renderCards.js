@@ -14,5 +14,7 @@ const renderCards = (cardDataArray) => {
     img.dataset.target = `card-${card.id}`;
     cardWrapper.appendChild(img);
     img.addEventListener("click", () => renderModal(card));
+    img.addEventListener("mouseenter", addHoverEffect)
+    img.addEventListener("mouseleave", removeHoverEffect)
   });
 };
