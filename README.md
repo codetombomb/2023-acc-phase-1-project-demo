@@ -8,7 +8,7 @@ Breath Of The Wild Companion is a searchable library that holds information on c
 ### Installation
 Clone this repository and change directory into this project folder. Then run:
 
-Mac: `open index.html`
+Mac: `open index.html`<br>
 Windows: `explorer.exe index.html`
 
 ### Design
