@@ -5,6 +5,7 @@ const populateModalData = (data, modal) => {
   const modalCategory = modal.querySelector(".modal-category");
   const modalImg = modal.querySelector(".modal-img");
   const modalLocations = modal.querySelector(".modal-locations");
+  const modalCommonLocationsHeading = modal.querySelector(".modal-common-locations-heading")
   const modalDrops = modal.querySelector(".modal-drops");
   const modalDropsHeading = modal.querySelector(".modal-drops-heading")
 
@@ -31,6 +32,7 @@ const populateModalData = (data, modal) => {
   modalImg.src = data.image;
 
   if (data.common_locations) {
+    modalCommonLocationsHeading.style.display = "inline-block"
     data.common_locations.forEach((location) => {
       const li = document.createElement("li");
       li.textContent = location;
