@@ -1,5 +1,3 @@
-const log = console.log
-
 const botwData = {
   creatures: [],
   equipment: [],
