@@ -97,11 +97,17 @@ header {
   flex-grow: 1;
 }
 
-#sheikah-logo {
+#sheikah-logo-link {
+  display: inline;
+  width: 5%;
   max-width: 4%;
   margin: 1.5% 0 1.5% 1.5%; /* (shorthand) margin: top right bottom left  */
   cursor: pointer;
   min-width: 50px;
+}
+
+#sheikah-logo {
+  width: 100%;
 }
 
 #nav-wrapper {
