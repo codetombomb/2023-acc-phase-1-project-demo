@@ -1,0 +1,14 @@
+{
+    "users":[
+        {
+            "id": 1,
+            "username": "tombomb",
+            "firstName": "Tom",
+            "lastName": "Tobar",
+            "email": "codetombomb@gmail.com",
+            "password": "asdf123",
+            "avatar": "https://avatars.githubusercontent.com/u/56778984?v=4"
+        }
+    ]
+
+}
